@@ -29,8 +29,17 @@ public class SeriesOfLoops {
         //5. a loop that will sum up the odd numbers from 0 to 99 and print it at the end of the loop
         int sumOdd = 1;
         for (int i = 1; i <= 99; i += 2) {
-            sumOdd += 1;
+            sumOdd += i;
         }
         System.out.println("The sum of odd numbers from numbers 0 to 99 is..." + sumOdd);
+
+        //6. a loop that will sum up the odd numbers from 0 to 99 and print it at the end of the loop
+        int sumEven = 0;
+        for (int i = 1; i <= 99; i += 2) {
+            sumEven += i;
+        }
+        System.out.println("The sum of the even numbers from 0 to 99 is..." + sumEven);
+
     }
+
 }
