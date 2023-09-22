@@ -1,3 +1,5 @@
+
+import java.util.Scanner;
 public class SeriesOfLoops {
     public static void main(String[] args) {
         // in class we are learned about for loops
@@ -40,6 +42,30 @@ public class SeriesOfLoops {
         }
         System.out.println("The sum of the even numbers from 0 to 99 is..." + sumEven);
 
+        //7. a loop that finds a sum of the numbers between two numbers that were given by the user, inclusive
+        Scanner scanner = new Scanner(System.in);
+        //get user input for the two numbers
+        System.out.println("Enter the starting number: ");
+        int startNum = scanner.nextInt();
+        System.out.println("Enter the ending number: ");
+        int endNum = scanner.nextInt();
+        //initialize variable to store the sum
+        int sumOfNumbers = 0;
+        //create for loop to iterate through the numbers and calculate the sum
+        for (int num = startNum; num <= endNum; num++) {
+            sumOfNumbers += num;
+        }
+        System.out.println("The sum of the numbers between " + startNum + " and " + endNum + " is... " + sumOfNumbers);
+        //always close scanner to prevent resource leak
+        scanner.close();
+
+
+
+
+
+
     }
+
+
 
 }
