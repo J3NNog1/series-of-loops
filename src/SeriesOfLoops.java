@@ -11,8 +11,12 @@ public class SeriesOfLoops {
 
         //a loop that will display every odd number from 1 to 99
         for (int i = 1; i <= 99; i += 2) {
-            System.out.println("The odd mumber displayed in this loop is: " + i);
+            System.out.println("The odd number displayed in this loop is: " + i);
         }
 
+        //a loop that will display every even number 0 to 99
+        for (int i = 0; i <= 99; i += 2) {
+            System.out.println("The even number displayed in this loop is: " + i );
+        }
     }
 }
