@@ -9,5 +9,10 @@ public class SeriesOfLoops {
             System.out.println(" This is string number: " + (i + 1));
         }
 
+        //a loop that will display every odd number from 1 to 99
+        for (int i = 1; i <= 99; i += 2) {
+            System.out.println("The odd mumber displayed in this loop is: " + i);
+        }
+
     }
 }
