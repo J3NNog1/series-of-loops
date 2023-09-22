@@ -18,5 +18,12 @@ public class SeriesOfLoops {
         for (int i = 0; i <= 99; i += 2) {
             System.out.println("The even number displayed in this loop is: " + i );
         }
+
+        //a loop that will display ever even number from 0 to 99 a different way
+        for (int i = 0; i <= 99; i++) {
+            if (i % 2 == 0) {
+                System.out.println(" The even number displayed in the second version of the even number loop is: " + i );
+            }
+        }
     }
 }
