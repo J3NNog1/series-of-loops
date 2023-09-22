@@ -43,23 +43,47 @@ public class SeriesOfLoops {
         System.out.println("The sum of the even numbers from 0 to 99 is..." + sumEven);
 
         //7. a loop that finds a sum of the numbers between two numbers that were given by the user, inclusive
+//        Scanner scanner = new Scanner(System.in);
+//        //get user input for the two numbers
+//        System.out.println("Enter the starting number: ");
+//        int startNum = scanner.nextInt();
+//        System.out.println("Enter the ending number: ");
+//        int endNum = scanner.nextInt();
+//        //initialize variable to store the sum
+//        int sumOfNumbers = 0;
+//        //create for loop to iterate through the numbers and calculate the sum
+//        for (int num = startNum; num <= endNum; num++) {
+//            sumOfNumbers += num;
+//        }
+//        System.out.println("The sum of the numbers between " + startNum + " and " + endNum + " is... " + sumOfNumbers);
+//        //always close scanner to prevent resource leak
+//        scanner.close();
+
+        //8. extra credit below create a loop that finds the sum of numbers between two numbers
+        //that were given by the user, however you want to find the max of the two then the min and
+        //position the loop where it reads the first integer as the smallest number
+
         Scanner scanner = new Scanner(System.in);
         //get user input for the two numbers
-        System.out.println("Enter the starting number: ");
-        int startNum = scanner.nextInt();
-        System.out.println("Enter the ending number: ");
-        int endNum = scanner.nextInt();
-        //initialize variable to store the sum
+        System.out.println("Enter the first number: ");
+        int firstNum = scanner.nextInt();
+        System.out.println("Enter the second number: ");
+        int secondNum = scanner.nextInt();
+        //find the min and the max number
+        int minNum = Math.min(firstNum, secondNum);
+        int maxNum = Math.max(firstNum, secondNum);
+        //calculate the sum of all the nums btwn minNum and maxNum
         int sumOfNumbers = 0;
-        //create for loop to iterate through the numbers and calculate the sum
-        for (int num = startNum; num <= endNum; num++) {
+        for (int num = minNum; num <= maxNum; num++){
             sumOfNumbers += num;
         }
-        System.out.println("The sum of the numbers between " + startNum + " and " + endNum + " is... " + sumOfNumbers);
-        //always close scanner to prevent resource leak
+        //display the results
+        System.out.println("Minimum number: " + minNum);
+        System.out.println("Maximum number: " + maxNum);
+        System.out.println("Sum of numbers between " + minNum + " and " + maxNum + ": " + sumOfNumbers);
+
+        //close scanner to prevent resource leak...
         scanner.close();
-
-
 
 
 
